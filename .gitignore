@@ -54,3 +54,4 @@ assets/*.mp4
 .DS_Store
 Thumbs.db
 desktop.ini
+_commit_msg.tmp
