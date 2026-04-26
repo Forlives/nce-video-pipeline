@@ -1,0 +1,16 @@
+﻿{
+    "lesson_id":  24,
+    "title":  "Give me/him/her/us/them...",
+    "text":  "Give me some bottles please. Which ones? These or those? Those, please. Give him a knife. Give her a fork. Give us some spoons. Give them some plates. Here you are.",
+    "level":  "beginner",
+    "vocabulary":  [
+                       "bottles",
+                       "knife",
+                       "fork",
+                       "spoon",
+                       "plate"
+                   ],
+    "grammar_points":  [
+                           "Give him/her/us/them ..."
+                       ]
+}

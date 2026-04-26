@@ -1,0 +1,15 @@
+﻿{
+    "lesson_id":  22,
+    "title":  "Give me a...",
+    "text":  "Give me a glass please. Which glass? This one or that one? This one? No, not that one. That one. Here you are. Thanks. Give me a cup please. Which cup? This one or that one? The blue one. Here you are.",
+    "level":  "beginner",
+    "vocabulary":  [
+                       "glass",
+                       "cup",
+                       "blue"
+                   ],
+    "grammar_points":  [
+                           "This one or that one?",
+                           "The ... one"
+                       ]
+}

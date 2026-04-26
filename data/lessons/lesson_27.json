@@ -1,0 +1,19 @@
+﻿{
+    "lesson_id":  27,
+    "title":  "Mrs. Smith\u0027s living room",
+    "text":  "Mrs. Smith\u0027s living room is large. There are two armchairs in the room. The armchairs are near the fireplace. There is a television in the room. The television is opposite the armchairs. There is a stereo in the corner. There are some books on the shelf. There are some flowers in the vase. The flowers are beautiful.",
+    "level":  "beginner",
+    "vocabulary":  [
+                       "living room",
+                       "armchair",
+                       "fireplace",
+                       "television",
+                       "stereo",
+                       "shelf",
+                       "vase"
+                   ],
+    "grammar_points":  [
+                           "There are ...",
+                           "near/opposite/in the corner"
+                       ]
+}

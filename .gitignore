@@ -1,0 +1,56 @@
+# Local secrets
+.env
+.env.local
+.env.*.local
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+.venv/
+venv/
+env/
+.eggs/
+*.egg-info/
+.pytest_cache/
+.coverage
+.coverage.*
+htmlcov/
+coverage.xml
+.mypy_cache/
+.ruff_cache/
+
+# Generated outputs
+output/
+runs/
+*.mp4
+*.mp3
+*.wav
+*.m4a
+*.srt
+!data/sample_lessons/*.json
+!data/lessons/*.json
+
+# Asset binary files (provide via assets/README.md instead)
+assets/*.png
+assets/*.jpg
+assets/*.jpeg
+assets/*.mp3
+assets/*.wav
+assets/*.mp4
+!assets/README.md
+
+# IDE / OS
+.cursor/
+.specstory/
+.vscode/
+.idea/
+*.code-workspace
+.cursorindexingignore
+.haoyunlai-data/
+.moyu-message/
+.DS_Store
+Thumbs.db
+desktop.ini

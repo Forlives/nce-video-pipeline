@@ -1,0 +1,18 @@
+﻿{
+    "lesson_id":  30,
+    "title":  "Where did you put...?",
+    "text":  "Where are the matches, Jane? Are they on the shelf? They aren\u0027t. Where are they? They are on the table. Where\u0027s the newspaper? It\u0027s on the chair. Where\u0027s my pen? It\u0027s in the box. Where are my keys? They are on the desk.",
+    "level":  "beginner",
+    "vocabulary":  [
+                       "matches",
+                       "newspaper",
+                       "chair",
+                       "box",
+                       "keys",
+                       "desk"
+                   ],
+    "grammar_points":  [
+                           "Where is/are ...?",
+                           "They aren\u0027t there"
+                       ]
+}

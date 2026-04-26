@@ -1,0 +1,17 @@
+﻿{
+    "lesson_id":  26,
+    "title":  "Where is it?",
+    "text":  "Where\u0027s the refrigerator? It\u0027s there, on the right. Where\u0027s the cooker? It\u0027s there, on the left. Where\u0027s the table? It\u0027s in the middle of the room. Where\u0027s the bottle? It\u0027s on the table. Where\u0027s the cup? It\u0027s on the table too. Where are the dishes? They are in the cupboard.",
+    "level":  "beginner",
+    "vocabulary":  [
+                       "right",
+                       "left",
+                       "middle",
+                       "dishes",
+                       "cupboard"
+                   ],
+    "grammar_points":  [
+                           "Where is/are ...?",
+                           "It\u0027s/They\u0027re ..."
+                       ]
+}

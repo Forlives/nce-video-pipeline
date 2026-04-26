@@ -1,0 +1,17 @@
+﻿{
+    "lesson_id":  25,
+    "title":  "Mrs. Smith\u0027s kitchen",
+    "text":  "Mrs. Smith\u0027s kitchen is small. There is a refrigerator in the kitchen. The refrigerator is white. It is on the right. There is an electric cooker. The cooker is blue. It is on the left. There is a table in the middle of the room. There is a bottle on the table. The bottle is empty. There is a cup on the table, too. The cup is clean.",
+    "level":  "beginner",
+    "vocabulary":  [
+                       "kitchen",
+                       "refrigerator",
+                       "cooker",
+                       "table",
+                       "empty",
+                       "clean"
+                   ],
+    "grammar_points":  [
+                           "There is ... on/in/at ..."
+                       ]
+}

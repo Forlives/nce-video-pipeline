@@ -1,0 +1,15 @@
+﻿{
+    "lesson_id":  23,
+    "title":  "Which glasses?",
+    "text":  "Give me some glasses please. Which glasses? These or those? Those, please. Here you are. Thanks. Give me some books please. Which books? These or those? Those over there. Sure.",
+    "level":  "beginner",
+    "vocabulary":  [
+                       "these",
+                       "those",
+                       "over there"
+                   ],
+    "grammar_points":  [
+                           "These or those?",
+                           "Those over there"
+                       ]
+}

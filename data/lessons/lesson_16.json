@@ -1,0 +1,15 @@
+﻿{
+    "lesson_id":  16,
+    "title":  "Are you...?",
+    "text":  "Are you French? No, we aren\u0027t. We\u0027re Italian. Are these your students? Yes, they are. Are you Italian? No, we aren\u0027t. We\u0027re Spanish. Are these your students? No, they aren\u0027t. They are Mike\u0027s students.",
+    "level":  "beginner",
+    "vocabulary":  [
+                       "Italian",
+                       "Spanish"
+                   ],
+    "grammar_points":  [
+                           "Are you ...?",
+                           "Yes, we are.",
+                           "No, we aren\u0027t."
+                       ]
+}
