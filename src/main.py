@@ -40,9 +40,12 @@ def _build_pipeline() -> VideoPipeline:
         base_url=settings.openai_base_url,
         model=settings.openai_model,
     )
+    # TTS 可使用独立 key/base_url,支持 LLM 走 Claude/中转, TTS 仍走 OpenAI 官方
+    tts_api_key = settings.tts_api_key or settings.openai_api_key
+    tts_base_url = settings.tts_base_url or settings.openai_base_url
     tts_backend = OpenAITTSBackend(
-        api_key=settings.openai_api_key,
-        base_url=settings.openai_base_url,
+        api_key=tts_api_key,
+        base_url=tts_base_url,
     )
 
     digital_human: DigitalHumanService | None = None

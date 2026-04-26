@@ -48,13 +48,22 @@ class TestBuildPipeline:
         reset_settings()
 
     def test_build_pipeline_returns_pipeline(self) -> None:
+        from pathlib import Path as _P
         with patch("src.main.get_settings") as mock_gs:
             mock_settings = MagicMock()
             mock_settings.openai_api_key = "fake-key"
             mock_settings.openai_base_url = "https://fake.api/v1"
             mock_settings.openai_model = "gpt-test"
             mock_settings.tts_voice = "alloy"
-            mock_settings.output_dir = "/tmp/output"
+            mock_settings.tts_api_key = ""
+            mock_settings.tts_base_url = ""
+            mock_settings.output_dir = _P("/tmp/output")
+            mock_settings.assets_dir = _P("/tmp/assets")
+            mock_settings.infinitetalk_api_url = ""
+            mock_settings.infinitetalk_api_key = ""
+            mock_settings.infinitetalk_resolution = "480p"
+            mock_settings.infinitetalk_reference_image = "assets/avatar.png"
+            mock_settings.infinitetalk_timeout = 1800.0
             mock_gs.return_value = mock_settings
 
             pipeline = _build_pipeline()

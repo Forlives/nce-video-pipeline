@@ -10,8 +10,8 @@
 
 ## ✨ 核心特性
 
-- 🤖 **GPT-4o 智能改编**:把 NCE 经典课文改写成现代对话/故事/情景剧脚本(JSON 结构化输出)
-- 🎙️ **OpenAI TTS 真人级配音**:多种音色,英文旁白逐场景生成
+- 🤖 **多模型 LLM 智能改编**:OpenAI / **Claude(via OpenRouter)** / DeepSeek / 任意 OneAPI 兼容中转,改 .env 即可切换
+- 🎙️ **OpenAI TTS 真人级配音**:多种音色,英文旁白逐场景生成,支持独立 key/base_url(混搭省钱)
 - 📝 **双语 SRT 字幕**:英文 + 中文 + 关键词高亮
 - 🎬 **ffmpeg 自动拼接**:静态背景图 + 多段音频 + 字幕 + 可选 BGM
 - 🤳 **可选数字人(GPU)**:接入远程 [InfiniteTalk](https://github.com/bmwas/InfiniteTalk) 服务,生成数字人讲师视频
@@ -56,12 +56,38 @@ cd nce-video-pipeline
 pip install -r requirements.txt
 ```
 
-### 2. 准备 `.env`
+### 2. 准备 `.env`(三选一)
 
 ```bash
 cp .env.example .env
-# 编辑 .env, 至少填 OPENAI_API_KEY
 ```
+
+**A. OpenAI 官方 GPT-4o**(默认):
+```env
+OPENAI_API_KEY=sk-xxx
+OPENAI_BASE_URL=https://api.openai.com/v1
+OPENAI_MODEL=gpt-4o
+```
+
+**B. Claude 3.5 Sonnet(via OpenRouter,一个 key 玩遍主流模型)**:
+```env
+OPENAI_API_KEY=sk-or-v1-xxx
+OPENAI_BASE_URL=https://openrouter.ai/api/v1
+OPENAI_MODEL=anthropic/claude-3.5-sonnet
+TTS_API_KEY=sk-openai-xxx          # TTS 独立 key (OpenRouter 不做 TTS)
+TTS_BASE_URL=https://api.openai.com/v1
+```
+
+**C. DeepSeek(国内便宜)**:
+```env
+OPENAI_API_KEY=sk-xxx
+OPENAI_BASE_URL=https://api.deepseek.com/v1
+OPENAI_MODEL=deepseek-chat
+TTS_API_KEY=sk-openai-xxx
+TTS_BASE_URL=https://api.openai.com/v1
+```
+
+> **TTS 必须用 OpenAI 兼容 / 官方 key**(中转大多不支持 audio),所以建议 LLM 和 TTS 用两套 key 混搭。
 
 ### 3. 准备 ffmpeg
 

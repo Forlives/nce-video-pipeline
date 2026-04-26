@@ -15,17 +15,32 @@ class TTSProvider(str, Enum):
 
 
 class Settings(BaseSettings):
-    openai_api_key: str = Field(default="", description="OpenAI API key")
+    # ---------- LLM (脚本改编, 兼容 OpenAI / Claude / OneAPI / OpenRouter / DeepSeek) ----------
+    openai_api_key: str = Field(default="", description="LLM API key (OpenAI / 第三方 OpenAI-兼容)")
     openai_base_url: str = Field(
         default="https://api.openai.com/v1",
-        description="OpenAI API base URL",
+        description="LLM base URL. 例: OpenRouter=https://openrouter.ai/api/v1, "
+        "DeepSeek=https://api.deepseek.com/v1, 自建OneAPI=https://your.domain/v1",
     )
-    openai_model: str = Field(default="gpt-4o", description="LLM model name")
+    openai_model: str = Field(
+        default="gpt-4o",
+        description="LLM 模型名. 例: gpt-4o / anthropic/claude-3.5-sonnet / "
+        "deepseek-chat / deepseek-reasoner",
+    )
 
+    # ---------- TTS (旁白配音, 独立 key/base_url 支持 OpenAI / Azure / 第三方) ----------
     tts_provider: TTSProvider = Field(
         default=TTSProvider.OPENAI, description="TTS backend"
     )
     tts_voice: str = Field(default="alloy", description="TTS voice name")
+    tts_api_key: str = Field(
+        default="",
+        description="TTS API key. 留空则回退使用 openai_api_key",
+    )
+    tts_base_url: str = Field(
+        default="",
+        description="TTS API base URL. 留空则回退使用 openai_base_url",
+    )
 
     output_dir: Path = Field(
         default=Path("./output"), description="Generated artefacts output directory"
